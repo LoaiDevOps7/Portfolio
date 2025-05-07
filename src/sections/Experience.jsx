@@ -15,18 +15,35 @@ const WorkExperience = () => {
         <p className="head-text">My Work Experience</p>
 
         <div className="work-container">
-          <div className="work-canvas">
-            <Canvas>
-              <ambientLight intensity={7} />
-              <spotLight position={[10, 10, 10]} angle={0.15} penumbra={1} />
-              <directionalLight position={[10, 10, 10]} intensity={1} />
-              <OrbitControls enableZoom={false} maxPolarAngle={Math.PI / 2} />
-
+          {/* <div className="work-canvas">
+            <Canvas
+              camera={{
+                position: [0, 0, 5], // تعديل موقع الكاميرا
+                fov: 50, // تقليل مجال الرؤية
+              }}
+              style={{
+                width: '400px',
+                height: '400px',
+                margin: '0 auto',
+              }}>
+              <ambientLight intensity={1.5} /> {/* تخفيف الإضاءة */}
+              {/* <spotLight position={[5, 5, 5]} angle={0.15} penumbra={1} intensity={0.5} />
+              <OrbitControls
+                enableZoom={false}
+                maxPolarAngle={Math.PI / 2}
+                minDistance={3} // تحديد أقرب مسافة
+                maxDistance={7} // تحديد أبعد مسافة
+              />
               <Suspense fallback={<CanvasLoader />}>
-                <Developer position-y={-3} scale={3} animationName={animationName} />
+                <Developer
+                  position={[0, -1, 0]} // تعديل الموقع
+                  scale={1.5} // تقليل الحجم
+                  rotation={[0, Math.PI / 4, 0]} // إضافة دوران بسيط
+                  animationName={animationName}
+                />
               </Suspense>
             </Canvas>
-          </div>
+          </div> */} 
 
           <div className="work-content">
             <div className="sm:py-10 py-5 sm:px-5 px-2.5">
